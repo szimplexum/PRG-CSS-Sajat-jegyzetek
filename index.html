@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First WEB with VisualStudio</title>
 
     <style>
-        span {
-            width: 220px;
-        }
+      span {
+        width: 220px;
+        display: block;
+        overflow: hidden;
+      }
 
-        .header {
-            background-color: cornflowerblue;
-        }
+      div {
+        width: 220px;
+      }
 
-        .megnevezes {
-            font-size: 12;
-            text-align: center;
-        }
+      .header {
+        background-color: cornflowerblue;
+      }
+
+      .megnevezes {
+        font-size: 12;
+        text-align: center;
+      }
     </style>
+  </head>
 
-</head>
-<body>
+  <body>
     <h1>Elkészítettem az első weboldalt</h1>
-    <span style="header">
-        <a href="https://fonts.google.com/" target="_blank">Betütípusok</a>
+    
+    <span class="header">
+      <a href="https://fonts.google.com/" target="_blank">Betütípusok</a>
+      <a href="https://www.w3schools.com/css/css_colors_rgb.asp" target="_blank">Színkeverés</a>
+      <a href="https://picsum.photos/">RandomIMG</a>
+      <a href="http://www.lorumipse.hu/">RandomTXT</a>
     </span>
-    <span>
-        <span>
-            <h3>ABC első betűje</h3>
-        </span>
-        <img src="a.png" alt="">
-    </span>
-    <span>
+    
+    <div>
+      <span>
+        <h3>ABC első betűje</h3>
+        <img src="a.png" alt="" />
+      </span>
+      <span>
         <h3>ABC második betűje</h3>
-        <img src="b.png" alt="">
-    </span>
-    <span>
+        <img src="b.png" alt="" />
+      </span>
+      <span>
         <h3>ABC harmadik betűje</h3>
-        <img src="c.png" alt="">
-    </span>
-    <span>
+        <img src="c.png" alt="" />
+      </span>
+      <span>
         <h3>ABC negyedik betűje</h3>
-        <img src="d.png" alt="">
-    </span>
-</body>
+        <img src="d.png" alt="" />
+      </span>
+    </div>
+  </body>
 </html>
