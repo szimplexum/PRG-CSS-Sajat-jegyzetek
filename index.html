@@ -6,51 +6,70 @@
     <title>First WEB with VisualStudio</title>
 
     <style>
-      span {
-        width: 220px;
-        display: block;
-        overflow: hidden;
-      }
-
-      div {
-        width: 220px;
-      }
-
-      .header {
+     .header {
         background-color: cornflowerblue;
+        padding: 20px;
+        text-align: right;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 400;
       }
 
-      .megnevezes {
-        font-size: 12;
-        text-align: center;
+      a {
+        border: 1px slategray;
       }
+ 
+
+      .FullWeb {
+        padding-left: 5%;
+        padding-top: 30px;
+      }
+
+      .article {
+        display: block;
+        float:left;
+        left: 20%;
+        width: 250px;
+        text-align: center;
+        border: 1px solid grey;
+        margin: 5px;
+      }
+      .article:hover{
+            background-color: blue;
+        }
     </style>
   </head>
 
   <body>
     <h1>Elkészítettem az első weboldalt</h1>
-    
-    <span class="header">
+
+    <div class="header">
       <a href="https://fonts.google.com/" target="_blank">Betütípusok</a>
-      <a href="https://www.w3schools.com/css/css_colors_rgb.asp" target="_blank">Színkeverés</a>
-      <a href="https://picsum.photos/">RandomIMG</a>
-      <a href="http://www.lorumipse.hu/">RandomTXT</a>
-    </span>
-    
-    <div>
-      <span>
-        <h3>ABC első betűje</h3>
-        <img src="a.png" alt="" />
+      <a href="https://www.w3schools.com/css/css_colors_rgb.asp" target="_blank"
+        >Színkeverés</a
+      >
+      <a href="https://picsum.photos/" target="_blank">RandomIMG</a>
+      <a href="http://www.lorumipse.hu/" target="_blank">RandomTXT</a>
+    </div>
+
+    <div class="FullWeb">
+      <span class="article">
+        <a href="a.png">
+          <h3>ABC első betűje</h3>
+          <img src="a.png" alt="" />
+        </a>
       </span>
-      <span>
+
+      <span class="article">
         <h3>ABC második betűje</h3>
         <img src="b.png" alt="" />
       </span>
-      <span>
+
+      <span class="article">
         <h3>ABC harmadik betűje</h3>
         <img src="c.png" alt="" />
       </span>
-      <span>
+
+      <span class="article">
         <h3>ABC negyedik betűje</h3>
         <img src="d.png" alt="" />
       </span>
