@@ -1,0 +1,23 @@
+table,
+td,
+th {
+  border: 1px solid lightgray;
+  height: 30px;
+  border-collapse: collapse;
+}
+th {
+  background-color: rgb(26, 167, 101);
+}
+th:nth-child(1) {
+  width: 300px;
+}
+th:nth-child(2) {
+  width: 200px;
+}
+th:nth-child(3) {
+  width: 100px;
+}
+
+tr:nth-child(odd) {
+  background-color: lightgray;
+}

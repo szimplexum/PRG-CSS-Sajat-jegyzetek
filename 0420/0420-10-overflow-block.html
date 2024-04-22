@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        background-color: blueviolet;
+        color: aliceblue;
+      }
+      div[style="display: block"] {
+        overflow: hidden;
+      }
+      div[style="display: inline-block"] {
+        overflow: hidden;
+        overflow: scroll; /* minden (x,y) irányba tesz scroll-t*/
+        overflow: auto; /*itt akkor és ott használja a scroll-t, ha valóban túlcsordulna */
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: block">
+      Block Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+      consequuntur sapiente nemo, amet incidunt delectus eligendi natus corrupti
+      debitis voluptate est eius commodi eum! Non quas placeat perspiciatis
+      molestiae ab.
+    </div>
+    <div style="display: inline">Inl</div>
+    <div style="visibility: hidden">Visiblity</div>
+    <div style="display: none">None</div>
+    <div style="display: inline-block">
+      Inline Block Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+      neque sunt voluptate excepturi nulla repellat id nobis quae quasi adipisci
+      reiciendis, omnis qui! Rerum nemo error vitae repudiandae quos id?
+    </div>
+  </body>
+</html>

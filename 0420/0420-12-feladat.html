@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feladat</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .card {
+      border: 1px solid black;
+      margin: 10px;
+      width: 250px;
+      height: 400px;
+      justify-content: center;
+      align-content: space-around
+      
+    }
+    .card:hover {
+      background-color: rgb(255, 0, 128);
+      color: aliceblue;
+      /* filter: invert(1); */
+    }
+    .imgbox {
+      height: 60px;
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      mix-blend-mode: multiply;
+      
+    }
+    .title {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 30px;
+      font-size: larger;
+    }
+
+    .about {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      height: 150px;
+      overflow: hidden;
+    }
+    .button {
+      border: 1px solid black;
+      background-color: black;
+      color: aliceblue;
+      border-radius: 40px;
+      padding: 10px;
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-size: larger;
+    }
+    .button:hover {
+      background-color: white;
+      color: black;
+      
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="imgbox">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr8htktyOppFfhDbsWcJZKRUX3dcob6HLU00ng72UUYQ&s"
+            alt=""
+          />
+        </div>
+        <div class="title">TWITTER</div>
+        <div class="about">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          autem, nulla non quo, voluptatem repellat sunt eius placeat ea rem
+          repellendus aliquid dolorem. Veniam, nobis dignissimos architecto
+          repudiandae maiores maxime.
+        </div>
+        <div class="button"><a href="#"></a>READ MORE</div>
+      </div>
+
+      <div class="card">
+        <div class="imgbox">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlDqcGY_FSfARMiIG2B61s1CIq0qkGshc7eckuMGtQvw&s"
+            alt=""
+          />
+        </div>
+        <div class="title">INSTAGRAM</div>
+        <div class="about">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          autem, nulla non quo, voluptatem repellat sunt eius placeat ea rem
+          repellendus aliquid dolorem. Veniam, nobis dignissimos architecto
+          repudiandae maiores maxime.
+        </div>
+        <div class="button"><a href="#"></a>READ MORE</div>
+      </div>
+
+      <div class="card">
+        <div class="imgbox">
+          <img
+            src="data:image/png;base64,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"
+            alt=""
+          />
+        </div>
+        <div class="title">YOUTUBE</div>
+        <div class="about">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          autem, nulla non quo, voluptatem repellat sunt eius placeat ea rem
+          repellendus aliquid dolorem. Veniam, nobis dignissimos architecto
+          repudiandae maiores maxime.
+        </div>
+        <div class="button"><a href="#"></a>READ MORE</div>
+      </div>
+    </div>
+  </body>
+</html>

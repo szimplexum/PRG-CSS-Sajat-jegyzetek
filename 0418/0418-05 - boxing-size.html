@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boxing size</title>
+
+    <style>
+      div {
+        border-style: dashed;
+        border-color: blue;
+        border-width: 1cm;
+        border: 5cm solid salmon;
+
+        background-color: aquamarine;
+
+        border-top: 4cm dotted #000;
+        border-left: 2cm hidden pink;
+        border-bottom: 2cm none rebeccapurple;
+        width: 10cm;
+        height: 10cm;
+        margin: 1cm;
+      }
+      .border_box {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div class="border_box"></div>
+  </body>
+</html>
