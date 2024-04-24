@@ -1,0 +1,24 @@
+
+
+.main_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main_left{
+    width: 200px;
+    border: 1px lightslategray solid;
+    justify-self: flex-start;
+}
+.main_right {
+    width: 400px;
+    border: 1px lightslategray solid;
+    justify-self: flex-end;
+}
+.main_center {
+    flex-grow: 1;
+    border: 1px lightslategray solid;
+    min-width: 600px;
+}
