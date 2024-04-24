@@ -1,0 +1,134 @@
+.f_container {
+  border: 1px lightslategray solid;
+  margin: 20px;
+  
+}
+
+/* 1. feladat GROW ----------------------------  */
+
+.title {
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  margin-bottom: 50px;
+  flex-flow: wrap row;
+  justify-content: center;
+}
+
+.item_g {
+  /* width: 100px; */
+  height: 80px;
+  margin: 5px;
+  flex-grow: 1;
+  align-content: center;
+  background-color: lightgray;
+  text-align: center; /*nem tudtam másként középre rendezni a szöveget*/
+  font-weight: bold;
+}
+
+.g3 {
+  flex-grow: 2;
+}
+
+/* 2. Feladat SRINK -------------- */
+.item_s {
+  height: 80px;
+  margin: 5px;
+  flex-grow: 1;
+  align-content: center;
+  background-color: lightgray;
+  text-align: center; /*nem tudtam másként középre rendezni a szöveget*/
+  font-weight: bold;
+}
+.s4 {
+  flex-shrink: 0;
+}
+
+/* 3. feladat - FEJLÉC készítés ---------------------------*/
+
+#head_container {
+  display: flex;
+  background-color: aquamarine;
+  flex-direction: row;
+  height: 30px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imgbox {
+  display: flex;
+  height: 100%;
+  width: 70px;
+}
+.menu {
+  background-color: rgb(117, 231, 193);
+  width: 70px;
+  height: 20px;
+  border: 1px gray solid;
+  align-content: center;
+  text-align: center;
+  margin: 5px;
+  box-shadow: 2px 3px 10px grey;
+}
+.menu:hover {
+  background-color: rgb(56, 182, 98);
+  border: 1px black solid;
+  border-radius: 5px;
+  color: aliceblue;
+  cursor: pointer;
+}
+.menu:active {
+  background-color: rgb(6, 75, 37);
+  margin: 9px;
+  box-shadow: 0px 0px 0px;
+}
+
+.menu_plusz {
+  flex-grow: 1;
+}
+
+.right {
+  color: red;
+}
+
+/* 4. feladat - webshop ---------------------------*/
+
+#shop_contanier {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.card {
+  width: 250px;
+  height: 300px;
+  border: 1px lightslategrey solid;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 2px 3px 10px grey;
+}
+.card:hover {
+  box-shadow: 2px 3px 10px rgb(39, 43, 245);
+  
+}
+.shop_title {
+  text-align: center;
+  font-weight: 800;
+  text-transform: capitalize;
+  height: 40px;
+  align-content: center;
+}
+.shop_img {
+  display: block;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shop_info {
+  text-align:justify;
+  margin: 15px;
+}
