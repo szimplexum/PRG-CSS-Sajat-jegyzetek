@@ -1,0 +1,29 @@
+:root {
+    --grid-bg: rgb(154, 233, 154);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-columns: repeat(3, 1fr);*/
+    gap: 10px;
+    grid-template-rows: 20px 20px 20px;
+}
+
+.grid-item {
+    background-color: var(--grid-bg);
+    border: 1px solid lightsteelblue;
+    text-align: center;
+}
+
+.grid-container div:nth-child(4) {
+    grid-column: span 3;
+}
+
+.grid-container div:last-child {
+    grid-column: 2 / 4;
+}
+
+.n3 {
+    order: -1;
+}

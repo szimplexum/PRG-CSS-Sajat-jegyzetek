@@ -1,0 +1,114 @@
+/* termekek */
+#termekek {
+  border: 5px blueviolet solid;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+#termekek .termek {
+  display: inline-block;
+  vertical-align: top;
+    text-align: left;
+  width: 256px;
+  height: 275px;
+  padding: 2px;
+  margin: 2px;
+  border: 1px solid #7faedd;
+}
+
+#termekek .termek {
+  min-height: 360px;
+  padding: 10px 15px 20px;
+  border-radius: 8px;
+  border: 1px solid #efefef;
+}
+
+#termekek .termek {
+  height: 320px;
+  border: none;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+#termekek .termek:hover {
+  box-shadow: 0px 0px 8px #033156;
+  /* padding: 15px; */
+  max-height: 320px;
+  /* height: 320px; */
+  /* width: 240px; */
+  position: relative;
+  z-index: 10;
+  /* text-align: center; */
+  border-radius: 8px;
+}
+/*  #d_termek_leiras {
+  font-size: 20px;
+}
+*/
+
+/* responsive table */
+@media only screen and (max-width: 840px) {
+  table.responsive {
+    margin-bottom: 0;
+    overflow: hidden;
+    overflow-x: scroll;
+    display: block;
+    white-space: nowrap;
+  }
+  #termekek .leiras {
+    font-size: 15px;
+  }
+
+  #termekek .termek {
+    padding: 10px;
+    margin-top: 15px;
+    width: 90%;
+    min-height: 450px;
+  }
+  #termekek .kep,
+  #linked_table .kep img {
+    max-width: 280px;
+    max-height: 180px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 768px) {
+  #termekek .termek .termek_kep_wrapper {
+    border: 1px;
+    text-align: center;
+    height: 230px;
+    cursor: pointer;
+  }
+
+  .termek_gyarto_kep {
+    z-index: 1;
+    max-height: 22px;
+    max-width: 100px;
+  }
+
+  .termek_garancia_kep {
+    bottom: 230px;
+    padding-right: 270px;
+  }
+
+  #termekek .termek {
+    box-shadow: 0px 0px 1px #033156;
+    border-radius: 8px;
+  }
+  #termekek .leiras {
+    max-height: 59px;
+    font-weight: bold;
+    /*font-size: 50px;*/
+    font-size: 1.8em;
+  }
+  #termekek .ar {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3px;
+  }
+}

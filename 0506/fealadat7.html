@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feladat 7</title>
+    <style>
+      body {
+        background-color: yellowgreen;
+      }
+      .tartalom {
+        width: 80vw;
+        position: relative;
+        margin: auto;
+        top: 50px;
+        z-index: 1;
+      }
+      .FullContainer {
+        display: grid;
+        height: 60vh;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 10px;
+      }
+      .LeftContainer,
+      .RightContainer {
+        display: grid;
+        gap: 10px;
+      }
+      .item {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-rows: repeat(auto-fill, minmax(2em, 1fr));
+        color: white;
+        font-size: 30px;
+        font-weight: 900;
+        background-color: blueviolet;
+        box-shadow: 1px 1px 30px black;
+        transition: all 1s;
+      }
+      .item:hover {
+        grid-template-rows: 300px;
+        grid-template-columns: 600px;
+        background-color: rgb(107, 38, 172);
+        text-align: center;
+        color: yellowgreen;
+        font-size: 100px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 50px yellow;
+        z-index: 2;
+      }
+
+      h1 {
+        color: yellowgreen;
+        text-shadow: 0px 0px 8px black;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>7. Feladat</h1>
+    <div class="tartalom">
+      <div class="FullContainer">
+        <div class="LeftContainer">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+        </div>
+        <div class="RightContainer">
+          <div class="item">4</div>
+          <div class="item">5</div>
+          <div class="item">6</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6. Feladat, IKEA</title>
+    <link
+      href="https://db.onlinewebfonts.com/c/eb170287d0e44284a3292879844309b2?family=IKEASans-Bold"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      body {
+        background-color: black;
+      }
+      :root {
+        --ikeayellow: #fbd916;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+      .g-container {
+        margin-top: 50px;
+        display: grid;
+        width: 80vw;
+        justify-content: center;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: repeat(4, 100px);
+        grid-template-areas:
+          "main right"
+          "main right"
+          "main right"
+          "main right";
+        gap: 10px;
+        padding: 10px;
+        background-color: white;
+      }
+      .items {
+        font-family: "IKEASans-Bold";
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        grid-area: main;
+        background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0),
+            rgba(0, 0, 0, 0.842)
+          ),
+          url(ikea_main.avif);
+        background-size: cover;
+      }
+      .main_top {
+        justify-content: center;
+        font-size: 100px;
+        letter-spacing: 10px;
+        font-weight: 900;
+        color: var(--ikeayellow);
+      }
+      .main_foot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .main-foot-info {
+        color: white;
+        font-size: larger;
+        text-shadow: 2px 2px 10px black;
+      }
+      .main-foot-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        width: 300px;
+        background-color: var(--ikeayellow);
+        margin: 10px auto 20px auto;
+        border-radius: 30px;
+      }
+      .mfb-right {
+        display: flex;
+        align-items: center;
+        width: 70%;
+        height: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        background-color: #f3e48d;
+        border: 4px solid --ikeayellow;
+        box-sizing: border-box;
+        transition: all 300ms;
+      }
+      .mfb-right:hover {
+        background-color: var(--ikeayellow);
+        color: white;
+        text-shadow: 0px 0px 8px black;
+        cursor: pointer;
+      }
+
+      .mfb-left {
+        width: 30%;
+        margin-left: 10px;
+        font-size: 10px;
+        font-weight: normal;
+      }
+
+      .right {
+        display: flex;
+        color: white;
+        font-size: larger;
+        padding: 10px;
+        text-shadow: 2px 2px 10px black;
+        align-items: flex-end;
+        transition: all 300ms;
+      }
+      .right:hover {
+        padding-left: 20px;
+        cursor: pointer;
+      }
+      .r1 {
+        background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0),
+            rgba(0, 0, 0, 0.842)
+          ),
+          url(ikea_2.avif);
+        background-size: cover;
+      }
+      .r2 {
+        background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0),
+            rgba(0, 0, 0, 0.842)
+          ),
+          url(ikea_5.webp);
+        background-size: cover;
+      }
+      .r3 {
+        background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0),
+            rgba(0, 0, 0, 0.842)
+          ),
+          url(ikea_4.avif);
+        background-size: cover;
+      }
+      .r4 {
+        background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0),
+            rgba(0, 0, 0, 0.842)
+          ),
+          url(ikea_3.webp);
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="g-container">
+        <div class="items main">
+          <div class="main_top">IKEA<sup style="font-size: 40px">®</sup></div>
+          <div class="main_foot">
+            <div class="main-foot-info">Információk</div>
+            <div class="main-foot-button">
+              <div class="mfb-left">GO TO</div>
+              <div class="mfb-right">BUTTON</div>
+            </div>
+          </div>
+        </div>
+        <div class="items right r1">IKEA Today</div>
+        <div class="items right r2">About IKEA</div>
+        <div class="items right r3">IKEA Museum</div>
+        <div class="items right r4">IKEA at H22</div>
+      </div>
+    </div>
+  </body>
+</html>

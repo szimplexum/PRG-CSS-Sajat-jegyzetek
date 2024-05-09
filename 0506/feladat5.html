@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID 5. feladat </title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 200px);
+            grid-template-rows: 100px 200px 100px;
+            grid-template-areas: 
+            "header header header header"
+            "left main main right"
+            "footer footer footer footer";
+            justify-content: center;
+        }
+        .header {
+            background-color: lightcoral;
+            grid-area: header;
+            text-align: center;
+            font-size: 30px;
+        }
+        .left {
+            text-align: left;
+        }
+        .main {
+            text-align: center;
+            grid-area: main;
+            border: 1px solid rgb(238, 238, 238);
+
+        }
+        .right {
+            text-align: right;
+        }
+        .footer {
+            background-color: lightgreen;
+            grid-area: footer;
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item header">Header</div>
+        <div class="item left"><h1>Left</h1><p>m1</p><p>m1</p><p>m2</p><p>m3</p><p>m4</p></div>
+        <div class="item main"><h1>Main</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum corrupti placeat quo error ad dignissimos asperiores culpa assumenda nostrum hic animi et eum a voluptatem, deleniti explicabo, ea eius ex.</p></div>
+        <div class="item right"><h1>Right</h1></div>
+        <div class="item footer">Footer</div>
+    </div>
+</body>
+</html>

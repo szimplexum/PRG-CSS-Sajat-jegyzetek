@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  grid-template-rows: repeat(3, 150px);
+  gap: 10px; /* Opcionális: térköz a cellák között */
+  height: 60vh;
+}
+
+.grid-item {
+  background-color: #ccc;
+}
+
+.grid-item:hover {
+  height: 200px;
+}
+
+/* Az auto-fit-al a magasságot állíthatjuk be */
+.grid-item:nth-child(3n+1) {
+  grid-row: span 2;
+}
+
+.grid-item:nth-child(3n+2) {
+  grid-row: span 2;
+}
+
+.grid-item:nth-child(3n+3) {
+  grid-row: span 1;
+}
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+      </div>
+</body>
+</html>
