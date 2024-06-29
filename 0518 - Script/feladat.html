@@ -1,0 +1,103 @@
+<script>
+    // let num1 = Number(prompt("Adj meg egy számot"));
+    // if (num1 > 0){
+    //     console.log("Pozitív számot adtál meg.");
+    // }
+    // if (num1 < 0) {
+    //     console.log("Negatív számot adtál meg.");
+    // }
+    // if (num1 == 0) {
+    //     console.log("NULLÁT adtál meg.")
+    // }
+
+    // let num2 = Number(prompt("Adj meg egy számot"));
+    // if ((num2 % 2) == 0) {
+    //     console.log("A megadott szám páros");
+    // }
+    // if ((isNaN % 2) != 0 és ) {  //**Kitöröltem a megoldását
+    //     console.log("A megadott szám páratlan");
+    // }
+    // if (isNaN(num2)) {
+    //     console.log("Kérlek adj meg egy SZÁMOT");
+    // }
+
+    // let psw = prompt("Adj meg egy jelszót");
+    // let hossz = psw.lengtht;
+    // if (psw.length <= 6){
+    //     console.log("A jelszó minimum 7 karakterből kell álljon, amit megadtál csak", psw.length, "karakter volt");
+    // }
+    // if (psw.length > 6){
+    // console.log("Kösz, a jelszavad:", psw);
+    // }
+
+
+    // let age= Number(prompt("Hány éves vagy?"));
+
+    // if (age<18) {
+    //     console.log("NEM Mehetsz BEEEEE")
+    // } else {
+    //     console.log("Jól van, mehetsz!")
+    // }
+
+    // Bim-Bum 6-tal osztható
+    // Bum 2-velosztható
+    // Bim 3-al osztható
+    
+    // let bb = Number(prompt("Adj meg egy számot"));
+
+    // if (bb % 6 == 0){
+    //     console.log("Bim-Bum 6-tal osztható");
+    // } 
+    // else if (bb % 3 == 0) {
+    //     console.log("Bim 3-al osztható");
+    // }
+    // else if (bb % 2 == 0) {
+    // console.log("Bum 2-velosztható");
+    // }
+    // else
+    // console.log("A következő adatot adtad meg:",bb);
+    
+    // let num1 = Number(prompt("Első szám"));
+    // let num2 = Number(prompt("Második szám"));
+    //     console.log("Csere előtt Num1:", num1);
+    //     console.log("Csere előtt Num2:", num2);
+    // let numChanger = num1;
+    // num1 = num2;
+    // num2 = numChanger;
+    //     console.log("Csere után Num1:", num1);
+    //     console.log("Csere után Num2:", num2);
+
+    // let n1 = prompt("Adj meg egy osztó számot");
+    // let n2 = prompt("Adj egy osztandó számot");
+
+    // if (!isNaN(n1) && !isNaN(n2) && n1 != 0) {
+    //     console.log("Osztó:" + n1 + ", osztandó:" + n2 + ", értéke: " + n2/n1);
+    // } else
+    //     console.log("Nem értelmezhető az osztás");
+
+        let kv = confirm("Kér kávét?");
+
+        if (kv) {
+            let cukor=confirm("Kér hozzá cukrot?");
+            let tej=confirm("Kér bele tejet?");
+            if (cukor){
+                cukor = "Cukorral";
+                } else {
+                cukor = "Cukor nélkül";
+            }
+            
+            if (tej){
+                let tejLaktoz = confirm("Esetleg Laktóz mentes tejet kér?");
+                if (tejLaktoz) {
+                    tej="Laktóz mentes tejjel";
+                } else {
+                    tej = "sima tejjel"
+                }
+            } else
+             tej="tej nélkül";
+            console.log("A kávéját", cukor, "és", tej, "kérte")
+            }
+        else {
+            console.log("Akkor viszlát!")
+        }
+</script>
